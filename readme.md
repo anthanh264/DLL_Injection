@@ -2,7 +2,8 @@
 ### Các bước tiến hành DLL Injection - Steps to perform DLL Injection
    - Tấn công tiến trình - Attach to the process 
    - Phân bổ bộ nhớ chứa tiến trình - Allocate memory within the process
-   - Chép đường dẫn DLL vào bộ nhớ tiến trình - Copy the DLL path into process memory    - Tạo luồng với tiến trình để thực thi DLL - Create a thread within the process to execute your DLL
+   - Chép đường dẫn DLL vào bộ nhớ tiến trình - Copy the DLL path into process memory    
+   - Tạo luồng với tiến trình để thực thi DLL - Create a thread within the process to execute your DLL
 ### Danh sách API sử dụng - List APIs
 - OpenProcess()
 - VirtualAllocEx()
