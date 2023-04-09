@@ -111,4 +111,4 @@ load_lib = GetProcAddress(GetModuleHandle(b"kernel32.dll"), b"LoadLibraryA")
 - Chúng ta đã có địa chỉ load library. Việc cần làm tiếp theo là tạo một luồng tới DLL đã tải lên. 
 We have the load library address now, all we need to do is to create a thread to execute the loaded DLL.
 
-./dll_injec.py -p <PID> -f <PATH_TO_DLL>
+./dll_injec.py -p <PID> -f <PATH_TO_DLL> 
