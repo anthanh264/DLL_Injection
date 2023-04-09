@@ -91,7 +91,7 @@ E)
     - flAllocationType and flProtect - cho biết loại phân bổ và bảo vệ bộ nhớ, chúng ta dùng 0x3000 cho loại phân bổ sẽ gọi VirtualAllocEx với MEM_RESERVE và MEM_COMMIT. 0x40 chỉ ra rằng bộ nhớ có thể đọc và ghi được.
     This indicates the allocation type and memory protection. We will use 0x3000 for the allocation type which will call VirtualAllocEx with MEM_RESERVE and MEM_COMMIT. 0x40 indicates that the memory is readable and writable.
 ### WriteProcessMemory()
-Chép đường dẫn DLL vào tiến trình. 
+Chép đường dẫn DLL vào tiến trình.  
 Now we will copy the DLL path into the process. We can use WriteProcessMemory to do so.
 ```
 write = WriteProcessMemory(handle, memory, dllname, len(dllname) + 1, None)
