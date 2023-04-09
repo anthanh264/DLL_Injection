@@ -73,7 +73,8 @@ handle = OpenProcess(PROCESS_ALL_ACCESS, False, pid)
    - dwProcessID - Đây là id của tiến trình 
    This is the process id of the process to be opened.
 ### VirtualAllocEx()
-- VirtualAllocEx() lấy dung lượng bộ nhớ để phân bổ làm một trong các tham số của nó.
+- VirtualAllocEx() lấy một lượng bộ nhớ để phân bổ các tham số của nó.
+VirtualAllocEx() takes amount of memory to allocate as one of its parameters.
 ```
 memory = VirtualAllocEx(handle, False, len(dllname) + 1, MEM_COMMIT | MEM_RESERVE, PAGE_READWRIT
 E)
